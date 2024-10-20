@@ -19,10 +19,10 @@ function deleteDuplicity(list) {
     return [...new Set(list)];
 }
 function getVocals() {
-    const sentence = getSentence();  // Obtiene la frase
-    let foundVocals = searchVocals(sentence);  // Busca vocales en la frase
-    foundVocals = deleteDuplicity(foundVocals);  // Elimina duplicados
-    const result = foundVocals.join(',');  // Junta las vocales en un string
-    document.getElementById('resulto').textContent = result;  // Muestra el resultado
+    const sentence = getSentence();  
+    let foundVocals = searchVocals(sentence);  
+    foundVocals = deleteDuplicity(foundVocals); 
+    const result = foundVocals.join(',');  
+    document.getElementById('resulto').textContent = result;  
     return result;
 }
